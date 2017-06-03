@@ -1,0 +1,20 @@
+{
+  "name": "onboarding_digital",
+  "version": "1.0.0",
+  "description": "1o Hackathon CIAB ~ Proposta de Onboarding Digital",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiofiorotti/onboarding_digital.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiofiorotti/onboarding_digital/issues"
+  },
+  "homepage": "https://github.com/sergiofiorotti/onboarding_digital#readme"
+}
