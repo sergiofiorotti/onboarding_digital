@@ -10,7 +10,6 @@ db.once ('open', function(){
 	
 	var ClientSchema = mongoose.Schema({
 		
-		id: Number,
 		rg: String,
 		shipping_date: Date,
 		fullname: String,
