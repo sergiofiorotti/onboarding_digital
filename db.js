@@ -8,8 +8,9 @@ db.on('error', console.error.bind(console, 'Erro ao conectar no banco'))
 
 db.once ('open', function(){
 	
-	var userSchema = mongoose.Schema({
+	var ClientSchema = mongoose.Schema({
 		
+		id: Number,
 		rg: String,
 		shipping_date: Date,
 		fullname: String,
@@ -21,4 +22,4 @@ db.once ('open', function(){
 		created_at: Date
 	});
 
-	exports.User = mongoose.model('User', userSchema);
+	exports.Client = mongoose.model('Client', clientSchema);
