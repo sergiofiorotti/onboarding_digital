@@ -19,8 +19,9 @@
   "homepage": "https://github.com/sergiofiorotti/onboarding_digital#readme",
   "dependencies": {
     "cors": "^2.8.3",
+    "express": "^4.15.3",
     "mongodb": "^2.1.16",
     "mongoose": "^4.4.10",
-    "express": "^4.15.3"
+    "validator": "^5.7.0",
   }
 }
