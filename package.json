@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/sergiofiorotti/onboarding_digital#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "cors": "^2.8.3",
     "express": "^4.15.3",
+    "express-crud": "^4.0.1",
+    "fs": "0.0.1-security",
     "mongodb": "^2.1.16",
     "mongoose": "^4.4.10",
-    "validator": "^5.7.0",
+    "path": "^0.12.7",
+    "validator": "^5.7.0"
   }
 }

@@ -1,24 +1,6 @@
-var db_string = 'mongodb://127.0.0.1/onboarding_digital';
+const mongoose = require('./models/base/mongoose')
+const mongodb = require('./config/mongodb')()
 
-var mongoose = require('mongoose').connect(db_string);
-
-var db = mongoose.connection;
-
-db.on('error', console.error.bind(console, 'Erro ao conectar no banco'))
-
-db.once ('open', function(){
-	
-	var ClientSchema = mongoose.Schema({
-		
-		rg: String,
-		shipping_date: Date,
-		fullname: String,
-		father: String,
-		mother: String,
-		naturalness: String,
-		born_date: Date,
-		CPF: String,
-		created_at: Date
-	});
-
-	exports.Client = mongoose.model('Client', clientSchema);
+module.exports = mongoose.connect(mongodb.connection.url, mongodb.options, (err) => {
+	if (err) throw err
+})
